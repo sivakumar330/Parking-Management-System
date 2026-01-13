@@ -1,0 +1,191 @@
+:root {
+  --primary: #2c3e50;
+  --secondary: #3498db;
+  --success: #2ecc71;
+  --danger: #e74c3c;
+  --warning: #f39c12;
+  --light: #ecf0f1;
+  --dark: #2c3e50;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: var(--primary);
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-stat {
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard-stat i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.slot {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.slot-available {
+  background-color: var(--success);
+}
+
+.slot-occupied {
+  background-color: var(--danger);
+}
+
+.slot-disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.vehicle-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.parking-visualization {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.lane {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #adb5bd;
+  border-radius: 5px;
+}
+
+.parking-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.receipt {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px dashed #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.history-table {
+  font-size: 0.9rem;
+}
+
+.history-actions {
+  white-space: nowrap;
+}
+
+.export-btn {
+  margin-left: 10px;
+}
+
+.filter-section {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.pagination {
+  margin-bottom: 0;
+}
+
+#historyTable tbody tr {
+  cursor: pointer;
+}
+
+#historyTable tbody tr:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.modal-lg {
+  max-width: 800px;
+}
+
+.badge-duration {
+  background-color: #6f42c1;
+}
+
+.badge-amount {
+  background-color: #20c997;
+}
+
+.slot-config-pill {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.slot-config-pill:hover {
+  transform: scale(1.05);
+}
+
+.config-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.slot-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.slot-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
